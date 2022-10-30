@@ -4,7 +4,8 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: '*'
+    origin: '*',
+    methods: ['GET']
 }));
 
 
@@ -14,11 +15,11 @@ app.get('/', (req, res) =>{
         slackUserName: "Ronin",
         backend: true,
         age: 28,
-        bio: "Striving to live a bug-free life."
+        bio: "Changing the world one semicolon at a time :) "
     }));
     
 });
-app.listen(6069, () => {
+app.listen(process.env.PORT || 6069, () => {
     console.log("Server running");
 });
 

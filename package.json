@@ -2,5 +2,30 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2"
+  },
+  "name": "stage-one-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NedLarry/hng9_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NedLarry/hng9_1/issues"
+  },
+  "homepage": "https://github.com/NedLarry/hng9_1#readme",
+  "description": "",
+  "engines": {
+    "node": "14.x"
   }
 }
