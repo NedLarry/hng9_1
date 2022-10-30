@@ -7,8 +7,10 @@ app.use(cors({
     origin: '*'
 }));
 
+var port = process.env.PORT || 1337;
 
-app.get('', (req, res) =>{
+
+app.get('/', (req, res) =>{
 
     res.send(JSON.stringify({
         slackUserName: "Ronin",
@@ -18,7 +20,7 @@ app.get('', (req, res) =>{
     }));
     
 });
-app.listen(process.env.PORT || 6069, () => {
+app.listen(port, () => {
     console.log("Server running");
 });
 
