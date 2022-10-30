@@ -12,12 +12,12 @@ var port = process.env.PORT || 1337;
 
 app.get('/', (req, res) =>{
 
-    res.send(JSON.stringify({
-        slackUserName: "Ronin",
+    res.send({
+        slackUsername: "Ronin",
         backend: true,
         age: 28,
         bio: "Changing the world one semicolon at a time :) "
-    }));
+    });
     
 });
 app.listen(port, () => {
