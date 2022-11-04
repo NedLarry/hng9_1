@@ -5,25 +5,25 @@ const bodyParser = require('body-parser');
 
 
 const app = express();
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json())
+
 
 app.use(cors({
     origin: '*'
 }));
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
+
 var port = process.env.PORT || 1337;
 
 
 app.get('/', (req, res) =>{
-
-    var response = {
+    res.send({
         slackUsername: "Ronin",
         backend: true,
         age: 28,
         bio: "Changing the world one semicolon at a time :) "
-    }
-    res.send(response);
+    });
 });
 
 app.post('/op', (req, res) => {
