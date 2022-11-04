@@ -1,1 +1,4 @@
 /node_modules
+compiled-js
+tsconfig.json
+/task-info.txt
